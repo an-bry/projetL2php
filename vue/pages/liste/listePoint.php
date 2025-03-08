@@ -16,25 +16,22 @@
             background-color: #f8f9fa;
         }
 
-        /*  */
+      
 
         .search-container i {
             background-color: black;
             color: white;
-            width: 30px; /* Largeur de l'icône */
-            height: 35px; /* Prend toute la hauteur du champ de texte */
+            width: 30px; 
+            height: 35px; 
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 5px; /* Arrondir les coins */
+            border-radius: 5px; 
             padding: 10px;
             cursor: pointer;
         }
     </style>
 <body>
-  
-
-
 <nav class="navbar navbar-dark justify-content-center fs-3 mb-5"style="background-color:orange;">
     PRESENCE
 </nav>
@@ -73,7 +70,7 @@ while($row=$requete->fetch()){
       <th scope="row"><?php echo $row['pointage']?></th>
      
       <td>
-    <a href="edit.php" class="link-dark  " style="color:black;"> 
+    <a href="../edit/editPoint.php?numEmp=<?php echo $row['numEmp'] ?>" class="link-dark  " style="color:black;"> 
        <i class="fa-solid fa-pen-to-square fs-5 me-3" ></i> </a>
        <a href="delete.php?id" class="link-red " style="color:red;">
                            <i class="fa-solid fa-trash fs-5"></i>

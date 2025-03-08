@@ -71,7 +71,7 @@ while($row=$requete->fetch()){
       <th scope="row"><?php echo $row['dateDemande']?></th>
       <th scope="row"><?php echo $row['dateRetour']?></th>
       <td>
-    <a href="edit.php" class="link-dark  " style="color:black;"> 
+    <a href="../edit/editConge.php?numEmp=<?php echo $row['numEmp'] ?>" class="link-dark  " style="color:black;"> 
        <i class="fa-solid fa-pen-to-square fs-5 me-3" ></i> </a>
        <a href="delete.php?id" class="link-red " style="color:red;">
                            <i class="fa-solid fa-trash fs-5"></i>
